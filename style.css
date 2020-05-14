@@ -1,0 +1,131 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	/*vertical-align: baseline;*/
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+header {
+    display: flex;
+}
+
+.menu {
+
+    position: fixed;
+    width: 100vw;
+
+}
+
+.calculator {
+    border: 2px solid #111;
+    max-width: 400px;
+    border-radius: 5px; /* arredonda as bordas */
+}
+.calculator input   {
+    /* reset basic form styles */
+    background: none;
+    border: none;
+    box-shadow: none;
+    outline: none;
+  
+    padding: 10px;
+    width: 100%;
+    border-bottom: 2px solid #111;
+    color: #333;
+    text-align: right;
+    font-size: 40px;
+    border-radius: 0;
+  }
+.number {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10;
+}
+
+.numbers {
+    /* small spacing within our container */
+  padding: 20px;
+
+  /* the grid stuff! */
+  display: grid;
+
+  /* create 4 columns */
+  grid-template-columns: repeat(4, 1fr);
+  /* add the grid gap */
+  grid-gap: 15px;
+}
+
+.digit  {
+    background: rgba(0, 0, 0, 0.5); /* light background with opacity 50% */
+    border: 1px solid #111; /* black border */
+    padding: 20px;
+    color: #EEE; /* white text */
+    border-radius: 5px; /* rounded corners */
+    font-size: 22px; /* larger fonts */
+    cursor: pointer; /* make it look clickable */
+    
+  }
+  /* span across 3 columns */
+.is-zero,
+.is-clear   {
+  grid-column: span 3;
+}
+
+/* go blue */
+.is-clear   {
+  background: #3572DB;
+}
+
+.is-equals {
+    background: #28D060;
+  }
