@@ -2,6 +2,7 @@
 
 <head>
     <link href="style.css" rel="stylesheet">
+    <script src="index.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -17,12 +18,12 @@
     </header>
     <section class="calc">
         <div class="calculator">
-            <input class="number" type="text" />
+            <input class="number" id="number" type="text" />
 
             <div class="numbers">
                 <button class="digit is-clear">C</button>
                 <button class="digit">/</button>
-                <button class="digit">7</button>
+                <button class="digit" onclick="clickNumber(this.Id)">7</button>
                 <button class="digit">8</button>
                 <button class="digit">9</button>
                 <button class="digit">*</button>
