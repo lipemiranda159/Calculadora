@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<head>
+    <link href="style.css" rel="stylesheet">
+    <script src="index.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Projetos</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <section class="calc">
+        <div class="calculator">
+            <input class="number" id="number" type="text" />
+
+            <div class="numbers">
+                <button class="digit is-clear" onclick="cleanInput()">C</button>
+                <button class="digit" onclick="div()">/</button>
+                <button class="digit" onclick="clickNumber(7)">7</button>
+                <button class="digit" onclick="clickNumber(8)">8</button>
+                <button class="digit" onclick="clickNumber(9)">9</button>
+                <button class="digit" onclick="multi()">*</button>
+                <button class="digit" onclick="clickNumber(4)">4</button>
+                <button class="digit" onclick="clickNumber(5)">5</button>
+                <button class="digit" onclick="clickNumber(6)">6</button>
+                <button class="digit" onclick="minus()">-</button>
+                <button class="digit" onclick="clickNumber(1)">1</button>
+                <button class="digit" onclick="clickNumber(2)">2</button>
+                <button class="digit" onclick="clickNumber(3)">3</button>
+                <button class="digit" onclick="sum()">+</button>
+                <button class="digit is-zero" onclick="clickNumber(0)">0</button>
+                <button class="digit is-equals" onclick="operation()">=</button>
+
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
