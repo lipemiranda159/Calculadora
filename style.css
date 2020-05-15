@@ -4,35 +4,43 @@
 */
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: 0;
+    box-sizing: border-box;
 }
 
 body {
     background-color: #0E0B16;
+    background-size: auto 100vh;
 }
 
 header {
-    height: 50vh;
+    height: 100vh;
     display: flex;
-}
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: black;
+  }
 
 .menu {
+
+    background: black;
     position: fixed;
     width: 100vw;
+    top: 0;
+
 }
 
 .menu ul {
-    display: flex;
+    display: flex; 
     justify-content: space-around;
 }
 
 .menu li {
+
     list-style: none;
 }
-
 a {
     color: white;
     text-decoration: none;
@@ -125,6 +133,10 @@ a:hover {
 
 .subtitle,
 .title {
+    color: whitesmoke;
     text-align: center;
-    color: white;
+}
+
+.subtitle {
+    font-style: italic;
 }
